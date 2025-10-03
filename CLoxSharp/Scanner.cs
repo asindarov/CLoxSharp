@@ -90,6 +90,18 @@ public class Scanner(string source)
                 {
                     while (Peek() != '\n' && !IsAtEnd()) Advance();
                 }
+
+                else if (Match('*'))
+                {
+                    // handle multi line comments
+                    while(Peek() != '*' && PeekNext() != '/')  Advance();
+
+                    // advance on *
+                    Advance();
+                    
+                    // advance on /
+                    Advance();
+                }
                 else
                 {
                     AddToken(TokenType.SLASH);

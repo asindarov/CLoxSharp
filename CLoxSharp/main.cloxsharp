@@ -1,8 +1,19 @@
 // this is a comment
-(( )){} // grouping stuff
-!*+-/=<> <= == // operators
+// (( )){} // grouping stuff
+// !*+-/=<> <= == // operators
 
 "Hello world"
 
 var a = 69;
 var b = "Asadbek"
+
+/* ... */
+
+/* 
+... 
+... 
+*/
+
+var a = 1;
+
+/* ... */  /* ... */ 
